@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP</title>
+</head>
+
+<body>
+    <h1>steps to install tailwindcss in React App</h1>
+    <p>1:Create your project</p>
+    npx create-react-app my-project
+    cd my-project
+    <p>2:Install Tailwind CSS</p>
+    npm install -D tailwindcss
+    npx tailwindcss init
+    <p>3:Configure your template paths</p>
+    module.exports = {
+    content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+    ],
+    theme: {
+    extend: {},
+    },
+    plugins: [],
+    }
+    <p>4:Add the Tailwind directives to your CSS './src/index.css</p>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    <p>5:Start your build process</p>
+    npm run start
+<p>axios.get(
+    `https://api.openweathermap.org/data/2.5/weather?q={search}&appid=098cf03868cacdf4a8a564fcbdbfce72`
+  )</p>
+</body>
+
+
+</html>
